@@ -384,7 +384,7 @@ if ((document.location.toString().indexOf("/citizen")!==-1) || (document.locatio
 
 if ($('.citizen_content h3:eq(4)').find('True Patriot history')) {
         $('.citizen_content h3:eq(4)').replaceText('True Patriot history','愛國者紀錄');
-        $('.citizen_content h3:eq(3)').html('愛國者<img class="tips" alt="" style="position:relative;bottom:-2px;right:-2px;" src="http://www.erepublik.com/images/modules/_icons/small_info_icon.png" original-title="此影響力累積會因國籍轉換而歸零">');
+        $('.citizen_content h3:contains(True Patriot)').html('愛國者<img class="tips" alt="" style="position:relative;bottom:-2px;right:-2px;" src="http://www.erepublik.com/images/modules/_icons/small_info_icon.png" original-title="此影響力累積會因國籍轉換而歸零">');
 	$('.citizen_content > .citizen_military:eq(2) > strong:first').text('影響力');
         $(".citizen_content > .citizen_military:eq(2) > div > small:contains('Progress:')").text('目前累積')
         $(".citizen_content > .citizen_military:eq(3) > div > small:contains('Progress:')").text('總共累積')
@@ -398,7 +398,7 @@ if ($('.citizen_content h3:eq(4)').find('True Patriot history')) {
 } else {
 
         //True Patriot
-        $('.citizen_content h3:eq(3)').html('愛國者<img class="tips" alt="" style="position:relative;bottom:-2px;right:-2px;" src="http://www.erepublik.com/images/modules/_icons/small_info_icon.png" original-title="此影響力累積會因國籍轉換而歸零">');
+        $('.citizen_content h3:contains(True Patriot)').html('愛國者<img class="tips" alt="" style="position:relative;bottom:-2px;right:-2px;" src="http://www.erepublik.com/images/modules/_icons/small_info_icon.png" original-title="此影響力累積會因國籍轉換而歸零">');
 	$('.citizen_content > .citizen_military:eq(2) > strong:first').text('影響力');
         $(".citizen_content > .citizen_military:eq(2) > div > small:contains('Progress:')").text('目前累積')
         $("#content > div.citizen_content > div.stat > strong:contains('Reach level 15 to enable your True Patriot progress')").text('到達15等級才可解鎖此區');
